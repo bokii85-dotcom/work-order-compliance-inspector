@@ -34,5 +34,11 @@ This application deploys a team of specialized AI agents built with **CrewAI** a
 #### Installation
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/bokii85-dotcom/work-order-compliance-inspector.git](https://github.com/bokii85-dotcom/work-order-compliance-inspector.git)
+   git clone https://github.com/bokii85-dotcom/work-order-compliance-inspector.git
    cd work-order-compliance-inspector
+   python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+pip install -r requirements.txt
+GROQ_API_KEY=your_groq_api_key_here
+streamlit run app.py
+
