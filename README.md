@@ -1,13 +1,13 @@
-# Autonomous Work Order & Compliance Inspector 
+# Autonomous Work Order & Compliance Inspector 🛠️🤖
 
 An autonomous multi-agent software platform designed to automate the auditing of enterprise work orders against vendor contracts, rate cards, and compliance guidelines.
 
 ---
 
-### Problem Statement
+### 🚨 Problem Statement
 In technical, industrial, and field operations (such as energy, construction, and electrical management), manually reviewing daily work orders, equipment rentals, and contractor invoices is extremely time-consuming and prone to human error—leading to costly overbilling and compliance leaks.
 
-### Solution & Architecture
+### 💡 Solution & Architecture
 This application deploys a team of specialized AI agents built with **CrewAI** and powered by **Groq (Llama 3.3)** to validate unstructured or tabular work orders:
 1. **Rate Card Auditor Agent:** Cross-checks billing lines against contractual rate cards.
 2. **Compliance Specialist Agent:** Verifies whether requested equipment and labor items adhere to project safety and operational scope.
@@ -15,7 +15,7 @@ This application deploys a team of specialized AI agents built with **CrewAI** a
 
 ---
 
-### Tech Stack
+### 🛠 Tech Stack
 
 - **Frameworks & Orchestration:** `CrewAI`, `Pydantic`
 - **LLM Engine:** `Groq API` (Llama 3.3 70B)
@@ -25,14 +25,28 @@ This application deploys a team of specialized AI agents built with **CrewAI** a
 
 ---
 
-###  Getting Started
+### 🚀 Getting Started
 
 #### Prerequisites
 - Python 3.11 or higher
 - Groq API Key
 
-#### Installation
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/bokii85-dotcom/work-order-compliance-inspector.git](https://github.com/bokii85-dotcom/work-order-compliance-inspector.git)
-   cd work-order-compliance-inspector
+#### Quickstart Instructions
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/bokii85-dotcom/work-order-compliance-inspector.git](https://github.com/bokii85-dotcom/work-order-compliance-inspector.git)
+cd work-order-compliance-inspector
+
+# 2. Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Set up environment variables (create a .env file)
+GROQ_API_KEY=your_groq_api_key_here
+
+# 5. Run the Streamlit app
+streamlit run app.py
