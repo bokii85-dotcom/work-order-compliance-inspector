@@ -35,7 +35,7 @@ This application deploys a team of specialized AI agents built with **CrewAI** a
 
 ```bash
 # 1. Clone the repository
-git clone (https://github.com/bokii85-dotcom/work-order-compliance-inspector.git)
+git clone https://github.com/bokii85-dotcom/work-order-compliance-inspector.git
 cd work-order-compliance-inspector
 
 # 2. Create and activate a virtual environment
